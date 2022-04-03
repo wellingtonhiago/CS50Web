@@ -25,8 +25,7 @@ flight = Flight(3)
 
 people = ["Goku", "Saitama", "Seiya", "Gojo", "Naruto"]
 for person in people:
-    sucess = flight.add_passenger(person)
-    if sucess:
+    if flight.add_passenger(person):
         print(f"Added {person} to flight successfully.")
     else:
         print(f"No available seats for {person}")
